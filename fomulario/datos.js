@@ -18,17 +18,26 @@ document.getElementById("registrobs").addEventListener("click", function (event)
     const nuevousuario = document.getElementById("usnew").value;
     const newpasword = document.getElementById("newpas").value;
 
-    agregarNombre(nuevoNombre, nuevocorreo, nuevousuario, newpasword);
+    if (datoscorreo.includes(nuevocorreo)) {
+        alert("El correo ya está registrado");
+        return; 
+    }
 
-    
+
+    datosnom.push(nuevoNombre);
+    datoscorreo.push(nuevocorreo);
+    usuariounic.push(nuevousuario);
+    pasword.push(newpasword);
+    alert("Registro exisitoso");
+    // Limpiar los campos de entrada
     document.getElementById("nomregis").value = "";
     document.getElementById("correoregis").value = "";
     document.getElementById("usnew").value = "";
     document.getElementById("newpas").value = "";
 
-   
     console.log("datosnom actualizado:", datosnom);
 });
+
 
 document.getElementById("identrar").addEventListener("click", function (event) {
     event.preventDefault();
@@ -49,7 +58,7 @@ document.getElementById("identrar").addEventListener("click", function (event) {
     if (correoEncontrado) {
         var contraseñaCorrespondiente = pasword[i]; 
         if (contraseñaIngresada === contraseñaCorrespondiente) {
-            window.location.href = "../softaware educativo/vistaprincipal.html";
+            window.location.href = "..//vista principal/vistaprincipal.html";
         } else {
             alert("Contraseña incorrecta");
         }

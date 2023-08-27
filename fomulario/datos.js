@@ -58,7 +58,7 @@ document.getElementById("identrar").addEventListener("click", function (event) {
     if (correoEncontrado) {
         var contraseñaCorrespondiente = pasword[i]; 
         if (contraseñaIngresada === contraseñaCorrespondiente) {
-            window.location.href = "..//vista principal/vistaprincipal.html";
+            window.location.href = "../vista principal/vistaprincipal.html";
         } else {
             alert("Contraseña incorrecta");
         }

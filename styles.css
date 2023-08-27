@@ -1,0 +1,95 @@
+
+
+
+body{
+    font-family: Arial, sans-serif; 
+    background-color: #62cccc; 
+    margin: 0; 
+    padding: 0; 
+    color: #333;
+}
+form{
+    width: 300px; 
+    background-color: #4e52be; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    padding: 20px; 
+    border-radius: 10px; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+}
+
+form label{
+    width: 100%;
+    display: inline-block;
+    font-weight: bold ;
+}
+form input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+   
+    
+#btn-enviar{
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#btn-enviar:hover {
+    background-color: #3498db; /* Cambia el fondo al color principal */
+    color: #fff;  
+}
+#btn-limpiar{
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#btn-limpiar:hover{
+    background-color: #3498db; /* Cambia el fondo al color principal */
+    color: #fff;  
+}
+
+.button-form{
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+form button:hover {
+    background-color: #3498db; 
+    color: #fff; 
+}

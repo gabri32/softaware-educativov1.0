@@ -1,55 +1,64 @@
-let button = document.getElementById('btn-enviar');// busca el boton enviar
+//Ejecutando funciones
+document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
+document.getElementById("btn__registrarse").addEventListener("click", register);
+window.addEventListener("resize", anchoPage);
 
-button.addEventListener('click', function () {
-    //alert('Datos enviados')
-    let nombreus = document.getElementById('nombreus');
-    let pasword = document.getElementById('pasword');
-    if (nombreus.value == '' || pasword.value == '') {
-        alert("El campo del nombre o el de contraseña esta vacio")
-    } else if (nombreus.value.length > 25) {
-        alert("USUARIO SUPERA EL LIMITE DE CARACTERES")
+//Declarando variables
+var formulario_login = document.querySelector(".formulario__login");
+var formulario_register = document.querySelector(".formulario__register");
+var contenedor_login_register = document.querySelector(".contenedor__login-register");
+var caja_trasera_login = document.querySelector(".caja__trasera-login");
+var caja_trasera_register = document.querySelector(".caja__trasera-register");
+
+    //FUNCIONES
+
+function anchoPage(){
+
+    if (window.innerWidth > 850){
+        caja_trasera_register.style.display = "block";
+        caja_trasera_login.style.display = "block";
+    }else{
+        caja_trasera_register.style.display = "block";
+        caja_trasera_register.style.opacity = "1";
+        caja_trasera_login.style.display = "none";
+        formulario_login.style.display = "block";
+        contenedor_login_register.style.left = "0px";
+        formulario_register.style.display = "none";   
     }
-    if (pasword.value.length > 30) {
-        alert("LA CONTRASEÑA SUPERA EL LIMITE DE CARACTERES")
+}
+
+anchoPage();
+
+
+    function iniciarSesion(){
+        if (window.innerWidth > 850){
+            formulario_login.style.display = "block";
+            contenedor_login_register.style.left = "10px";
+            formulario_register.style.display = "none";
+            caja_trasera_register.style.opacity = "1";
+            caja_trasera_login.style.opacity = "0";
+        }else{
+            formulario_login.style.display = "block";
+            contenedor_login_register.style.left = "0px";
+            formulario_register.style.display = "none";
+            caja_trasera_register.style.display = "block";
+            caja_trasera_login.style.display = "none";
+        }
     }
-})
 
-
-let buttonlim = document.getElementById('btn-limpiar');// busca el boton limpiar
-buttonlim.addEventListener('click', function () {
-    let nombreus = document.getElementById('nombreus');
-    nombreus.value = '';
-    let pasword = document.getElementById('pasword');
-    pasword.value = '';
-    alert('Datos limpiados')
-})
-const loginForm = document.getElementById("form");
-const passwordInput = document.getElementById("pasword");
-const nombreinput= document.getElementById("nombreus");
-
-// Agregar un evento de clic al botón de enviar
-document.getElementById("btn-enviar").addEventListener("click", function() {
-    // Obtener el valor del campo de contraseña
-    const passwordValue = passwordInput.value;
-const nombrevalue = nombreinput.value;
-    // Verificar si la contraseña es igual a "1193"
-    if (passwordValue === "1193200857" && nombrevalue === "gabriel") {
-        // Si la contraseña coincide, redirigir al usuario al otro formulario
-        window.location.href = "file:///C:/Users/gabod/OneDrive/Escritorio/softaware%20educativo/vistaprincipal.html"; // Reemplaza con la URL correcta
-    } else {
-        // Si la contraseña no coincide, enviar el formulario actual
-        loginForm.submit();
-    }
-});
-const btnRegistro = document.getElementById("btn-registro");
-
-// Agregar un evento de clic al botón
-btnRegistro.addEventListener("click", function() {
-   
-    window.location.href = "https://github.com/gabri32/softaware-educativov1.0/fomulairo.html";
-});
-
-const btnRetroceso = document.getElementById("btn-retroceso");
-btnRetroceso.addEventListener("click", function() {
-    window.location.href = "file:///C:/Users/gabod/OneDrive/Escritorio/softaware%20educativo/index.html"; 
-});
+    function register(){
+        if (window.innerWidth > 850){
+            formulario_register.style.display = "block";
+            contenedor_login_register.style.left = "410px";
+            formulario_login.style.display = "none";
+            caja_trasera_register.style.opacity = "0";
+            caja_trasera_login.style.opacity = "1";
+        }else{
+            formulario_register.style.display = "block";
+            contenedor_login_register.style.left = "0px";
+            formulario_login.style.display = "none";
+            caja_trasera_register.style.display = "none";
+            caja_trasera_login.style.display = "block";
+            caja_trasera_login.style.opacity = "1";
+        }
+}

@@ -4,7 +4,7 @@ button.addEventListener('click', function () {
     //alert('Datos enviados')
     let nombreus = document.getElementById('nombreus');
     let pasword = document.getElementById('pasword');
-    if (nombreus.value == '' && pasword.value == '') {
+    if (nombreus.value == '' || pasword.value == '') {
         alert("El campo del nombre o el de contraseña esta vacio")
     } else if (nombreus.value.length > 25) {
         alert("USUARIO SUPERA EL LIMITE DE CARACTERES")
@@ -20,5 +20,5 @@ buttonlim.addEventListener('click', function () {
     nombreus.value = '';
     let pasword = document.getElementById('pasword');
     pasword.value = '';
-    alert('Datos limpiados')
+    alert('te amo vida')
 })

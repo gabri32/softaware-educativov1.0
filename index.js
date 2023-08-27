@@ -23,3 +23,35 @@ buttonlim.addEventListener('click', function () {
     pasword.value = '';
     alert('Datos limpiados')
 })
+const loginForm = document.getElementById("form");
+const passwordInput = document.getElementById("pasword");
+const nombreinput= document.getElementById("nombreus");
+
+// Agregar un evento de clic al botón de enviar
+document.getElementById("btn-enviar").addEventListener("click", function() {
+    // Obtener el valor del campo de contraseña
+    const passwordValue = passwordInput.value;
+const nombrevalue = nombreinput.value;
+    // Verificar si la contraseña es igual a "1193"
+    if (passwordValue === "1193200857" && nombrevalue === "gabriel") {
+        // Si la contraseña coincide, redirigir al usuario al otro formulario
+        window.location.href = "file:///C:/Users/gabod/OneDrive/Escritorio/softaware%20educativo/vistaprincipal.html"; // Reemplaza con la URL correcta
+    } else {
+        // Si la contraseña no coincide, enviar el formulario actual
+        loginForm.submit();
+    }
+});
+const btnRegistro = document.getElementById("btn-registro");
+
+// Agregar un evento de clic al botón
+btnRegistro.addEventListener("click", function() {
+   
+    window.location.href = "file:///C:/Users/gabod/OneDrive/Escritorio/softaware%20educativo/fomulairo.html";
+});
+const btnretroceso = document.getElementById("btn-retroceso");
+
+// Agregar un evento de clic al botón
+btnretroceso.addEventListener("click", function() {
+   
+    window.location.href = "file:///C:/Users/gabod/OneDrive/Escritorio/softaware%20educativo/index.html";
+});

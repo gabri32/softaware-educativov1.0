@@ -14,11 +14,12 @@ button.addEventListener('click', function () {
     }
 })
 
+
 let buttonlim = document.getElementById('btn-limpiar');// busca el boton limpiar
 buttonlim.addEventListener('click', function () {
     let nombreus = document.getElementById('nombreus');
     nombreus.value = '';
     let pasword = document.getElementById('pasword');
     pasword.value = '';
-    alert('te amo vida')
+    alert('Datos limpiados')
 })

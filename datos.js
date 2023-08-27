@@ -49,7 +49,7 @@ document.getElementById("identrar").addEventListener("click", function (event) {
     if (correoEncontrado) {
         var contraseñaCorrespondiente = pasword[i]; 
         if (contraseñaIngresada === contraseñaCorrespondiente) {
-            alert("Inicio de sesión exitoso");
+            window.location.href = "../softaware educativo/vistaprincipal.html";
         } else {
             alert("Contraseña incorrecta");
         }

@@ -48,10 +48,8 @@ btnRegistro.addEventListener("click", function() {
    
     window.location.href = "file:///C:/Users/gabod/OneDrive/Escritorio/softaware%20educativo/fomulairo.html";
 });
-const btnretroceso = document.getElementById("btn-retroceso");
 
-// Agregar un evento de clic al botón
-btnretroceso.addEventListener("click", function() {
-   
-    window.location.href = "file:///C:/Users/gabod/OneDrive/Escritorio/softaware%20educativo/index.html";
+const btnRetroceso = document.getElementById("btn-retroceso");
+btnRetroceso.addEventListener("click", function() {
+    window.location.href = "file:///C:/Users/gabod/OneDrive/Escritorio/softaware%20educativo/index.html"; 
 });

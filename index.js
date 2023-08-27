@@ -46,7 +46,7 @@ const btnRegistro = document.getElementById("btn-registro");
 // Agregar un evento de clic al botón
 btnRegistro.addEventListener("click", function() {
    
-    window.location.href = "fomulairo.html";
+    window.location.href = "https://github.com/gabri32/softaware-educativov1.0/blob/main/fomulairo.html";
 });
 const btnretroceso = document.getElementById("btn-retroceso");
 

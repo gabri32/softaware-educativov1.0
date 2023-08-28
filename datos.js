@@ -78,6 +78,41 @@ document.getElementById("identrar").addEventListener("click", function (event) {
 });
 
 
+document.getElementById("olvidoContraseña").addEventListener("click", function (event) {
+    event.preventDefault();
+
+    var correoParaRestablecer = prompt("Por favor, ingresa tu correo electrónico para restablecer la contraseña:");
+
+    if (correoParaRestablecer === null) {
+        // El usuario canceló el restablecimiento de contraseña
+        return;
+    }
+
+    var correoEncontrado = false;
+    var usuarioIndex = -1;
+
+    for (var i = 0; i < datoscorreo.length; i++) {
+        if (correoParaRestablecer === datoscorreo[i]) {
+            correoEncontrado = true;
+            usuarioIndex = i;
+            break;
+        }
+    }
+
+    if (correoEncontrado) {
+        var nuevaContraseña = prompt("Ingresa tu nueva contraseña:");
+
+        if (nuevaContraseña !== null && nuevaContraseña !== "") {
+            // Actualizar la contraseña del usuario
+            pasword[usuarioIndex] = nuevaContraseña;
+            alert("Contraseña restablecida con éxito. Puedes iniciar sesión con tu nueva contraseña.");
+        } else {
+            alert("La contraseña no puede estar en blanco. El restablecimiento de contraseña ha sido cancelado.");
+        }
+    } else {
+        alert("El correo electrónico ingresado no se encuentra registrado.");
+    }
+});
 
 
 

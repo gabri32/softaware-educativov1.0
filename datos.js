@@ -52,17 +52,13 @@ document.getElementById("identrar").addEventListener("click", function (event) {
 
     var correoIngresado = document.getElementById("correo").value;
     var contraseñaIngresada = document.getElementById("contraseña").value;
-    
+
 
     var correoEncontrado = false;
     for (var i = 0; i < datoscorreo.length; i++) {
         if (correoIngresado === datoscorreo[i]) {
-            
-           console.log(datosnom)
-           var label = document.getElementById("cajaTextoLabel");
 
-           // Cambia el valor del label
-           label.innerText = datoscorreo;
+            console.log(datosnom)
             correoEncontrado = true;
             break;
         }
@@ -71,13 +67,8 @@ document.getElementById("identrar").addEventListener("click", function (event) {
     if (correoEncontrado) {
         var contraseñaCorrespondiente = pasword[i];
         if (contraseñaIngresada === contraseñaCorrespondiente) {
-            
-           
-            
             window.location.href = "../softaware educativo/vista principal/vistaprincipal.html";
 
-            
-           
         } else {
             alert("Contraseña incorrecta");
         }
@@ -85,6 +76,8 @@ document.getElementById("identrar").addEventListener("click", function (event) {
         alert("El correo no se encuentra registrado");
     }
 });
+
+
 
 
 

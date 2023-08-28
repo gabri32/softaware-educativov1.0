@@ -20,7 +20,7 @@ document.getElementById("registrobs").addEventListener("click", function (event)
 
     if (datoscorreo.includes(nuevocorreo)) {
         alert("El correo ya está registrado");
-        return; 
+        return;
     }
 
 
@@ -37,28 +37,47 @@ document.getElementById("registrobs").addEventListener("click", function (event)
 
     console.log("datosnom actualizado:", datosnom);
 });
+function mostrarContenido(idContenido) {
+    // Ocultar todos los contenidos adicionales
+    document.querySelectorAll('.hidden-content').forEach(function (el) {
+        el.style.display = 'none';
+    });
 
+    // Mostrar el contenido específico
+    document.getElementById(idContenido).style.display = 'block';
+}
 
 document.getElementById("identrar").addEventListener("click", function (event) {
     event.preventDefault();
 
     var correoIngresado = document.getElementById("correo").value;
     var contraseñaIngresada = document.getElementById("contraseña").value;
+    
 
-   
     var correoEncontrado = false;
     for (var i = 0; i < datoscorreo.length; i++) {
         if (correoIngresado === datoscorreo[i]) {
+            
+           console.log(datosnom)
+           var label = document.getElementById("cajaTextoLabel");
+
+           // Cambia el valor del label
+           label.innerText = datoscorreo;
             correoEncontrado = true;
-            break; 
+            break;
         }
     }
 
-    
     if (correoEncontrado) {
-        var contraseñaCorrespondiente = pasword[i]; 
+        var contraseñaCorrespondiente = pasword[i];
         if (contraseñaIngresada === contraseñaCorrespondiente) {
+            
+           
+            
             window.location.href = "../softaware educativo/vista principal/vistaprincipal.html";
+
+            
+           
         } else {
             alert("Contraseña incorrecta");
         }
@@ -66,6 +85,7 @@ document.getElementById("identrar").addEventListener("click", function (event) {
         alert("El correo no se encuentra registrado");
     }
 });
+
 
 
 

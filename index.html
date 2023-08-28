@@ -1,68 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login y Register </title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
+<nav>
+    <a href="#">Acerca de</a>
+    <a href="#" id="mostrarLista">Contacto</a>
+    <ul id="listaDesplegable">
+        <li>310000000</li>
+        <li>300000000</li>
+        <li>200000000</li>
+    </ul>
+
+</nav>
+
 <body>
 
-        <main>
+    <main>
 
-            <div class="contenedor__todo">
-                <div class="caja__trasera">
-                    <div class="caja__trasera-login">
-                        <h3>¿Ya tienes una cuenta?</h3>
-                        <p>Inicia sesión para entrar en la página</p>
-                        <button id="btn__iniciar-sesion"> </i>Iniciar Sesión <i class="fa-solid fa-right-to-bracket"></i></button>
-                    </div>
-                    <div class="caja__trasera-register">
-                        <h3>¿Aún no tienes una cuenta?</h3>
-                        <p>Regístrate para que puedas iniciar sesión</p>
-                        <button id="btn__registrarse">Regístrarse  <i class="fa-solid fa-cloud-arrow-up"> </i></button>
-                    </div>
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para entrar en la página</p>
+                    <button id="btn__iniciar-sesion"> </i>Iniciar Sesión <i
+                            class="fa-solid fa-right-to-bracket"></i></button>
                 </div>
-
-                <!--Formulario de Login y registro-->
-                <div class="contenedor__login-register">
-                    <!--Login-->
-                    <form action="" class="formulario__login">
-                        <h2>Iniciar Sesión</h2>
-                        <input type="text" id="correo" placeholder="Correo Electronico">
-                        <input type="password" id="contraseña" placeholder="Contraseña">
-                        <button id="identrar">Entrar  <i class="fa-solid fa-check"></i></button>
-                    </form>
-
-                    <!--Register-->
-                    <form action="" class="formulario__register">
-                        <h2>Regístrarse</h2>
-                        <input type="text" id ="nomregis"placeholder="Nombre completo">
-                        <input type="text" id="correoregis" placeholder="Correo Electronico">
-                        <input type="text" id="usnew" placeholder="Usuario">
-                        <input type="password"id="newpas" placeholder="Contraseña">
-                        <button id="registrobs">Regístrarse  <i class="fa-solid fa-check"></i></button>
-                    </form> 
+                <div class="caja__trasera-register">
+                    <h3>¿Aún no tienes una cuenta?</h3>
+                    <p>Regístrate para que puedas iniciar sesión</p>
+                    <button id="btn__registrarse">Regístrarse <i class="fa-solid fa-cloud-arrow-up"> </i></button>
                 </div>
             </div>
-        </main>
-        <script src="index.js"></script>
-        <script src="datos.js"></script>
-        <script src="https://kit.fontawesome.com/4d6c73e062.js" crossorigin="anonymous"></script>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <footer >
-            <p style="color: white;font-size: 10px;">&copy;2023 Universidad de Nariño
-                <br> Gabriel De La Cruz
-                <br> Erick Armando Imbacuan
-                <br> David Guerrero</p>     
-        </footer>
+
+            <!--Formulario de Login y registro-->
+            <div class="contenedor__login-register">
+                <!--Login-->
+                <form action="" class="formulario__login">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" id="correo" placeholder="Correo Electronico">
+                    <input type="password" id="contraseña" placeholder="Contraseña">
+                    <button id="identrar"> Iniciar sesión <i class="fa-solid fa-check"></i></button>
+                </form>
+
+                <!--Register-->
+                <form action="" class="formulario__register">
+                    <h2>Regístrarse</h2>
+                    <input type="text" id="nomregis" placeholder="Nombre completo">
+                    <input type="text" id="correoregis" placeholder="Correo Electronico">
+                    <input type="text" id="usnew" placeholder="Usuario">
+                    <input type="password" id="newpas" placeholder="Contraseña">
+                    <button id="registrobs">Regístrarse <i class="fa-solid fa-check"></i></button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+    <script src="datos.js"></script>
+    <script src="https://kit.fontawesome.com/4d6c73e062.js" crossorigin="anonymous"></script>
+    <br>
+    <br>
+
+    <footer>
+        <p style="color: white;font-size: 12px;">&copy;2023 Universidad de Nariño
+            <br> Gabriel De La Cruz
+            <br> Erick Armando Imbacuan
+            <br> David Guerrero
+            <br>Aviso de Uso Educativo:
+            Los videos presentes en esta página web se han incorporado con fines puramente educativos. No tenemos la
+            intención de utilizar estos videos para ningún otro propósito, como lucro comercial o infringir los derechos
+            de autor. Reconocemos y respetamos los derechos de los creadores de contenido y hemos tomado medidas para
+            asegurarnos de que el contenido se utilice de acuerdo con las leyes de derechos de autor. Si eres el creador
+            de uno de los videos y tienes alguna preocupación o pregunta sobre su uso en este contexto, por favor,
+            contáctanos de inmediato para abordar cualquier problema. Agradecemos a los creadores de contenido por
+            compartir su conocimiento y creatividad con la comunidad educativa.
+        </p>
+    </footer>
 </body>
+
 </html>

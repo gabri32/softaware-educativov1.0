@@ -115,7 +115,10 @@ document.getElementById("olvidoContraseña").addEventListener("click", function 
 });
 
 
-
+function redirigirARepositorios() {
+    // Cambia 'nombre_de_tu_otro_archivo.html' por el nombre de tu archivo HTML de destino.
+    window.location.href = '../softaware educativo/pagina_demodulos/modulo1.html';
+}
 
 
 

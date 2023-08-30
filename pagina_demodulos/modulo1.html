@@ -1,171 +1,211 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Modulo 1</title>  
-    <link rel="stylesheet" href="stylesmodulos.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <title>Modulos</title>
+    <link rel="stylesheet" href="../css/styles2.css">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>
+        /* Estilo para ocultar el contenido adicional */
+        .hidden-content {
+            display: none;
+        }
+    </style>
 </head>
+<nav>
+    <a href="../index.html">Cerrar sesión</a>
+    <a href="#">Acerca de</a>
+</nav>
 
 <body>
-    <header>
-        <nav>
-            <a href="../vista principal/vistaprincipal.html">Inicio</a>
-            <a href="#">Acerca de</a>
-            <a href="#">Contacto</a>
-        </nav>
-        <section class="textos-header">
-            <h1>Apende lo basico</h1>
-            <h2>HTML</h2>
-        </section>
-        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #fff;"></path>
-            </svg></div>
-    </header>
-    <main>
-        <section class="contenedor sobre-nosotros">
-            <h2 class="titulo">Video explicativo</h2>
-            <h3 class="titulo">#1</h3>
-            <div class="contenedor-sobre-nosotros">
-                <video width="640" height="360" controls>
-                    <source src="../videos/#1 Introducción - Formulario Web (1080p).mp4" type="video/mp4"></video>
-                    <source src="../videos/1-Introducciónogg.ogg" type="video/ogg"></video>
-                <div class="contenido-textos">
-                    <h3><span>1</span>Módulo de Formulario HTML:</h3>
-                    <p> Este módulo se enfoca en la organización semántica de una página web. Los elementos estructurales como 
-                        header, section, article, aside, footer, entre otros, ayudan a los desarrolladores
-                        a definir la jerarquía y la relación del contenido en la página. Esto no solo mejora la accesibilidad, 
-                        sino que también ayuda a los motores de búsqueda a comprender mejor el contenido.</p>
-                </div>
-            </div>
-        </section>
-        <section class="portafolio">
-            <div class="contenedor">
-                <h2 class="titulo">Portafolio</h2>
-                <div class="galeria-port">
-                    <div class="imagen-port">
-                        <img src="img/img1.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/img2.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/img3.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/img1.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/img4.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/img5.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/img6.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/img7.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="clientes contenedor">
-            <h2 class="titulo">Que dicen nuestros clientes</h2>
-            <div class="cards">
-                <div class="card">
-                    <img src="img/face1.jpg" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>Name</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/face2.jpg" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>Name</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="about-services">
-            <div class="contenedor">
-                <h2 class="titulo">Nuestros servicios</h2>
-                <div class="servicio-cont">
-                    <div class="servicio-ind">
-                        <img src="img/ilustracion1.svg" alt="">
-                        <h3>Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
-                    </div>
-                    <div class="servicio-ind">
-                        <img src="img/ilustracion4.svg" alt="">
-                        <h3>Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
-                    </div>
-                    <div class="servicio-ind">
-                        <img src="img/ilustracion3.svg" alt="">
-                        <h3>Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="contenedor-footer">
-            <div class="content-foo">
-                <h4>Phone</h4>
-                <p>8296312</p>
-            </div>
-            <div class="content-foo">
-                <h4>Email</h4>
-                <p>8296312</p>
-            </div>
-            <div class="content-foo">
-                <h4>Location</h4>
-                <p>8296312</p>
-            </div>
+    <label id="cajaTextoLabel">Hola</label>
+    <h1 class="title">Modulos primeros pasos en Html,css y javascript</h1>
+
+    <div class="container" style="color: rgb(255, 255, 255);">
+
+        <div class="card">
+            <img src="../img/1317795.png">
+            <h4>HTML MODULO #1</h4>
+            <p> Fundamentos de HTML</p>
+            <!-- Botón para mostrar contenido adicional 1 -->
+            <button class="boton" onclick="mostrarContenido('contenido1')">Comenzar</button>
+
         </div>
-       
-    </footer>
+
+        <div class="card">
+            <img src="../img/1366_2000.jpg">
+            <h4>HTML MODULO #2</h4>
+            <p>Formateo y Estilo</p>
+            <!-- Botón para mostrar contenido adicional 2 -->
+            <button class="boton" onclick="mostrarContenido('contenido2')">Comenzar</button>
+        </div>
+
+        <div class="card">
+            <img src="../img/wallhaven-83z1qk.jpg">
+            <h4>HTML MODULO #3</h4>
+            <p>Multimedia y Avanzado</p>
+            <!-- Botón para mostrar contenido adicional 3 -->
+            <button class="boton" onclick="mostrarContenido('contenido3')">Comenzar</button>
+        </div>
+
+        <!-- Contenido adicional oculto inicialmente -->
+        <div id="contenido1" class="hidden-content">
+            <h2>Módulo #1: Organización Semántica</h2>
+
+            <!-- Video 1 -->
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/yJ3l8_AUjQ4?si=9fiQKuCqW7iRoEb6"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                 encrypted-media; 
+                gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            </video>
+
+            <p>Este módulo se enfoca en la organización semántica de una página web. Los elementos estructurales como
+                header, section, article, aside, footer, entre otros, ayudan a los desarrolladores a definir la
+                jerarquía y la relación del contenido en la página. Esto no solo mejora la accesibilidad, sino que
+                también ayuda a los motores de búsqueda a comprender mejor el contenido.</p>
+
+            <!-- Video 2 -->
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/yJ3l8_AUjQ4?si=FYHXzG--0w54wtgQ"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>Manejo de javascript</p>
+            </video>
+
+
+
+            <!-- Caja de texto -->
+            <textarea id="cajaTexto" class="txtsug" placeholder="Escribe tu sugerencia aquí"></textarea>
+            <button class="boton" onclick="enviarSugerencia()">Enviar Sugerencia</button>
+
+
+
+            <!-- Mensaje de confirmación oculto inicialmente -->
+            <div id="mensajeSugerencia" style="display: none; color: green;">Sugerencia enviada con éxito</div>
+
+          
+
+
+
+        <div id="contenido2" class="hidden-content">
+            <!-- Aquí puedes colocar el contenido que deseas mostrar -->
+            <h2>Módulo #2: Formateo y estilos</h2>
+
+            <!-- Video 3 -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fymU_sjf9NM?si=RsVlDHhwUZVljGSA"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+             gyroscope; picture-in-picture;
+             web-share" allowfullscreen></iframe>
+
+            </video>
+
+            <p>Validaciones,
+                Alertas,
+                Manejo de elementos de HTML con javascript.</p>
+
+            <!-- Video 4 -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MMf_elTcREw?si=XicrhuuJ9ehHxlzK"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+             gyroscope; picture-in-picture; 
+            web-share" allowfullscreen></iframe>
+
+            </video>
+            <p>Explicacion estilos en css #1</p>
+            <!-- Video 5 -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tBMwc24-pY0?si=2fIZBsO6_kySRYha"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            </video>
+
+            <p>Explicacion estilos en css #2</p>
+            <!-- Caja de texto -->
+            <textarea id="cajaTexto" class="txtsug" placeholder="Escribe tu sugerencia aquí"></textarea>
+            <button class="boton" onclick="enviarSugerencia()">Enviar Sugerencia</button>
+
+
+
+            <!-- Mensaje de confirmación oculto inicialmente -->
+            <div id="mensajeSugerencia" style="display: none; color: green;">Sugerencia enviada con éxito</div>
+
+            <p style="color: white;font-size: 12px;">&copy;2023 Universidad de Nariño
+                <br> Gabriel De La Cruz
+                <br> Erick Armando Imbacuan
+                <br> David Guerrero
+                <br>Aviso de Uso Educativo:
+                Los videos presentes en esta página web se han incorporado con fines puramente educativos. No tenemos la
+                intención de utilizar estos videos para ningún otro propósito, como lucro comercial o infringir los
+                derechos de autor. Reconocemos y respetamos los derechos de los creadores de contenido y hemos tomado
+                medidas para asegurarnos de que el contenido se utilice de acuerdo con las leyes de derechos de autor.
+                Si eres el creador de uno de los videos y tienes alguna preocupación o pregunta sobre su uso en este
+                contexto, por favor, contáctanos de inmediato para abordar cualquier problema. Agradecemos a los
+                creadores de contenido por compartir su conocimiento y creatividad con la comunidad educativa.
+            </p>
+        </div>
+
+        <div id="contenido3" class="hidden-content">
+            <!-- Aquí puedes colocar el contenido que deseas mostrar -->
+            <h2>Módulo #3: Multimedia y Avanzado </h2>
+
+            <!-- Video 6 -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WMit4CsmlbQ?si=8P7xxsRymYp4u8K7"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <p>creacion de host gratuito.</p>
+
+            <!-- Video 7 -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/h8kdCkBp8xw?si=10tmJabvK3iCOo6c"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+             gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            </video>
+            <p>Introduccion y configuracion de la base de datos</p>
+            <!-- Video 8 -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ErhAGkG3ipQ?si=9p10YFEVO8kvILGE"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+               gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            </video>
+
+            <p>Base de datos, Crear Tabla, Querys Insert, Update, Delete</p>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1foWpWOeS3s?si=KjRFiyH8o5e75raJ"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+             gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            </video>
+            <p> API Node.js | Conexión con Postgres</p>
+            <!-- Caja de texto -->
+            <textarea id="cajaTexto" class="txtsug" placeholder="Escribe tu sugerencia aquí"></textarea>
+            <button class="boton" onclick="enviarSugerencia()">Enviar Sugerencia</button>
+
+            <!-- Mensaje de confirmación oculto inicialmente -->
+            <div id="mensajeSugerencia" style="display: none; color: green;">Sugerencia enviada con éxito</div>
+
+            <p style="color: white;font-size: 12px;">&copy;2023 Universidad de Nariño
+                <br> Gabriel De La Cruz
+                <br> Erick Armando Imbacuan
+                <br> David Guerrero
+                <br>Aviso de Uso Educativo:
+                Los videos presentes en esta página web se han incorporado con fines puramente educativos. No tenemos la
+                intención de utilizar estos videos para ningún otro propósito, como lucro comercial o infringir los
+                derechos de autor. Reconocemos y respetamos los derechos de los creadores de contenido y hemos tomado
+                medidas para asegurarnos de que el contenido se utilice de acuerdo con las leyes de derechos de autor.
+                Si eres el creador de uno de los videos y tienes alguna preocupación o pregunta sobre su uso en este
+                contexto, por favor, contáctanos de inmediato para abordar cualquier problema. Agradecemos a los
+                creadores de contenido por compartir su conocimiento y creatividad con la comunidad educativa.
+            </p>
+        </div>
+
+    </div>
+
+    <script src="../datos.js"></script>
+    <script src="../index.js"></script>
+  
+    </script>
 </body>
 
 </html>
